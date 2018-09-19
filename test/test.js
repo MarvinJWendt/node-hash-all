@@ -17,7 +17,7 @@ test('Get all hashes as variable', t => {
   t.pass()
 })
 
-test('Hashing all accepted hashes and testing them', t => {
+test('Hashing all accepted hashes and testing them (standard)', t => {
   console.log(app.forEachHash('Hello World', (hash, algo) => {
     console.log(`(${algo}) - ${hash}`)
     if(testHash(hash, 'Hello World')) console.log('Working!')
