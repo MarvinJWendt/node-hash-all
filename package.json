@@ -16,5 +16,15 @@
   "repository": {
     "type": "GIT",
     "url": "https://github.com/MarvinJWendt/node-hash-all"
-  }
+  },
+  "keywords": [
+    "hash",
+    "test",
+    "hashing",
+    "decrypt",
+    "decipher",
+    "md5",
+    "sha",
+    "debug"
+  ]
 }
