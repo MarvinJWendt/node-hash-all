@@ -18,3 +18,4 @@ To run it:
     
     //Get every supported hash ('md5, 'sha1', etc..)
     hashAll.getHashes()
+    hashAll.hashes
