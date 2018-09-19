@@ -19,3 +19,5 @@ exports.getHashes = function ()  {
   return crypto.getHashes()
 }
 
+exports.hashes = exports.getHashes()
+

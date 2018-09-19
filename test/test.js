@@ -3,8 +3,15 @@ const testHash = require("test-hash")
 
 const app = require('../src/app')
 
-test('Get all hashes', t => {
+test('Get all hashes as function', t => {
   app.getHashes().forEach(hash => {
+    console.log(hash)
+  })
+  t.pass()
+})
+
+test('Get all hashes as variable', t => {
+  app.hashes.forEach(hash => {
     console.log(hash)
   })
   t.pass()
