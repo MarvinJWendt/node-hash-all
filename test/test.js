@@ -1,10 +1,19 @@
 import test from 'ava'
+const testHash = require("test-hash")
 
 const app = require('../src/app')
 
-test('Hashing all accepted hashes', t => {
+test('Hashing all accepted hashes and testing them', t => {
   console.log(app.forEachHash('Hello World', (hash, algo) => {
     console.log(`(${algo}) - ${hash}`)
-    t.pass()
+    if(testHash(hash, 'Hello World')) console.log('Working!')
+    else {
+      console.log('ERROR')
+      t.fail(`${algo} failed to return the correct string!`)
+    }
+    console.log("")
   }))
+
+  t.pass()
+
 })
