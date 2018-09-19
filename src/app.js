@@ -14,3 +14,6 @@ exports.forEachHash = function (string, fn) {
   }
 
 }
+
+exports.getHashes = crypto.getHashes()
+

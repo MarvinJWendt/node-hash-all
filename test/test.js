@@ -3,6 +3,13 @@ const testHash = require("test-hash")
 
 const app = require('../src/app')
 
+test('Get all hashes', t => {
+  app.getHashes.forEach(hash => {
+    console.log(hash)
+  })
+  t.pass()
+})
+
 test('Hashing all accepted hashes and testing them', t => {
   console.log(app.forEachHash('Hello World', (hash, algo) => {
     console.log(`(${algo}) - ${hash}`)
