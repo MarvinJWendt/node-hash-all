@@ -4,7 +4,7 @@ const testHash = require("test-hash")
 const app = require('../src/app')
 
 test('Get all hashes', t => {
-  app.getHashes.forEach(hash => {
+  app.getHashes().forEach(hash => {
     console.log(hash)
   })
   t.pass()
