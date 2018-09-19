@@ -1,4 +1,4 @@
-# node-hash-all
+# hash-all
 > NodeJS module to hash a string in every available hash and do something with it.
 
 ## Usage
