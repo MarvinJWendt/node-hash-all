@@ -11,6 +11,6 @@ To import the module:
     
 To run it:
 
-    hashAll("SOME STRING", (hash, algo) => {
+    hashAll.forEachHash("SOME STRING", (hash, algo) => {
         console.log(`(${algo}) - ${hash}`)
     })
