@@ -32,3 +32,11 @@ test('Hashing all accepted hashes and testing them (standard)', t => {
   t.pass()
 
 })
+
+test('For each hash in list', t => {
+  app.forEachHashInList('Hello World', ['md5', 'sha1'], (hash, algo) => {
+    console.log(`(${algo}) - ${hash}`)
+  })
+
+  t.pass()
+})
