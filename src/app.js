@@ -1,8 +1,6 @@
 const crypto = require('crypto')
 
-
 exports.forEachHash = function (string, fn) {
-
   for (let algo in crypto.getHashes()) {
     try {
       fn(crypto.createHash(crypto.getHashes()[algo]).update(string).digest('hex').toString(), crypto.getHashes()[algo])
@@ -10,7 +8,6 @@ exports.forEachHash = function (string, fn) {
       throw err
     }
   }
-
 }
 
 exports.getHashes = function () {
@@ -27,5 +24,4 @@ exports.forEachHashInList = function (string, list, fn) {
       throw err
     }
   }
-
 }

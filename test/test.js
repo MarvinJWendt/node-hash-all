@@ -30,7 +30,6 @@ test('Hashing all accepted hashes and testing them (standard)', t => {
   }))
 
   t.pass()
-
 })
 
 test('For each hash in list', t => {
