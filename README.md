@@ -12,7 +12,7 @@ To import the module:
 To run it:
     
     //Log every hash possibility to the console
-    hashAll.forEachHash("SOME STRING", (hash, algo) => {
+    hashAll.forEachHash('Hello World', (hash, algo) => {
         console.log(`(${algo}) - ${hash}`)
     })
     
