@@ -29,4 +29,3 @@ exports.forEachHashInList = function (string, list, fn) {
   }
 
 }
-
