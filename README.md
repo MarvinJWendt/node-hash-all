@@ -16,6 +16,11 @@ To run it:
         console.log(`(${algo}) - ${hash}`)
     })
     
+    //Log every hash you set in a list to the console
+    app.forEachHashInList('Hello World', ['md5', 'sha1'], (hash, algo) => {
+        console.log(`(${algo}) - ${hash}`)
+    })
+    
     //Get every supported hash ('md5, 'sha1', etc..)
     hashAll.getHashes()
     hashAll.hashes
