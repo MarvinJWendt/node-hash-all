@@ -7,7 +7,7 @@
     "test-hash": "^2.1.2"
   },
   "devDependencies": {
-    "ava": "1.4.1"
+    "ava": "2.1.0"
   },
   "scripts": {
     "start": "node src/app.js",
